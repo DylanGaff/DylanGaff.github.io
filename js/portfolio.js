@@ -29,11 +29,11 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; // This for loop takes each item in the array "slides" and sets the display to none
     }
-    for (i = 0 <dots.length; i++;) {
-        dots[i].className = dots[i].className.replace("active",""); // This for loop takes each item in the array "dots" and removes "active" which removes the active styling
+    for (i = 0; i <dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active",""); // This for loop takes each item in the array "dots" and removes "active" which removes the active styling
     }
     slides[slideIndex - 1].style.display = "block"; // This displays the image in the slideshow
-    dots[slideIndex - 1].className += "active"; // This adds the active styling to the dot assoctiated with the image
+    dots[slideIndex - 1].className += " active"; // This adds the active styling to the dot assoctiated with the image
 }
 
 // This code will create close the contact form when the user clicks off of it
